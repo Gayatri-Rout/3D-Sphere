@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    /* Create a stacking context for body and html */
+}
+
+.webgl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nav {
+    width: 100%;
+    color: white;
+    position: absolute;
+    /* Position the navigation absolutely */
+    top: 0;
+    left: 0;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    /* Ensure the navigation is above the rendered scene */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
